@@ -1,0 +1,46 @@
+<!--
+  ~ Copyright 2019 JUN MAO
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">电影</string>
+    <string name="search">搜索</string>
+    <string name="title_home">首页</string>
+    <string name="title_character">人物</string>
+    <string name="title_tv">电视</string>
+    <string name="nav_other">其他</string>
+    <string name="nav_share">分享</string>
+    <string name="nav_setting">设置</string>
+    <string name="author">作者</string>
+    <string name="release_date">发布日期:%s</string>
+    <string name="homepage">主页:%s</string>
+    <string name="duration">时长:%s</string>
+    <string name="tagline">标语:%s</string>
+    <string name="overview">概述</string>
+
+    <string-array name="film_tab_title">
+        <item name="popular">流行</item>
+        <item name="top_rated">评分最高</item>
+        <item name="upcoming">即将上映</item>
+        <item name="now_playing">正在上映</item>
+    </string-array>
+
+    <string-array name="tv_tab_title">
+        <item name="popular">流行</item>
+        <item name="top_rated">评分最高</item>
+        <item name="on tv">即将播出</item>
+        <item name="airing today">正在播出</item>
+    </string-array>
+</resources>
