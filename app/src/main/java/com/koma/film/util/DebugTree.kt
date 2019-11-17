@@ -1,4 +1,4 @@
-package com.koma.commonlibrary.util
+package com.koma.film.util
 
 import timber.log.Timber
 

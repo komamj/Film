@@ -6,5 +6,4 @@ import com.koma.film.data.source.FilmRepository
 import javax.inject.Inject
 
 @OpenForTesting
-class SplashViewModel @Inject constructor(private val repository: FilmRepository) : ViewModel() {
-}
+class SplashViewModel @Inject constructor(private val repository: FilmRepository) : ViewModel()

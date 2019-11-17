@@ -16,7 +16,11 @@
 
 package com.koma.film.data.source.remote
 
-import com.koma.film.data.entities.*
+import com.koma.film.data.entities.DataModel
+import com.koma.film.data.entities.Film
+import com.koma.film.data.entities.People
+import com.koma.film.data.entities.PeopleDetail
+import com.koma.film.data.entities.TVShow
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.POST

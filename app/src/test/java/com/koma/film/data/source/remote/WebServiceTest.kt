@@ -10,16 +10,13 @@ import org.junit.runners.JUnit4
 class WebServiceTest {
     @Before
     fun `start service`() {
-
     }
 
     @Test
     fun `should return film list when getPopularFilms successful`() {
-
     }
 
     @After
     fun `stop service`() {
-
     }
 }

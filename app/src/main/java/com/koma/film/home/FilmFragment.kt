@@ -29,8 +29,8 @@ import com.koma.commonlibrary.testing.OpenForTesting
 import com.koma.film.R
 import com.koma.film.databinding.FragmentBaseBinding
 import com.koma.film.di.Injectable
-import timber.log.Timber
 import javax.inject.Inject
+import timber.log.Timber
 
 @OpenForTesting
 class FilmFragment : BaseFragment<FragmentBaseBinding>(), Injectable {

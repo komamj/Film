@@ -1,7 +1,8 @@
-package com.koma.commonlibrary.util
+package com.koma.film.util
 
 import android.util.Log
 import androidx.annotation.NonNull
+import com.tencent.bugly.crashreport.CrashReport
 import timber.log.Timber
 
 class ReleaseTree : Timber.DebugTree() {
@@ -16,7 +17,7 @@ class ReleaseTree : Timber.DebugTree() {
         }
 
         if (t != null) {
-            // todo upload log
+            CrashReport.postCatchedException(t)
         }
     }
 }

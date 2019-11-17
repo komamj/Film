@@ -7,7 +7,11 @@ import com.koma.film.util.LiveDataTestUtil
 import com.koma.film.util.RxJavaRule
 import io.reactivex.Single
 import io.reactivex.schedulers.TestScheduler
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

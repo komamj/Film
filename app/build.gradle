@@ -26,6 +26,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField 'String', 'ENDPOINT', "\"${endpoint}\""
         buildConfigField 'String', 'TMDB_API_KEY', "\"${tmdb_api_key}\""
+        buildConfigField 'String', 'BUGLY_APP_ID', "\"${bugly_app_id}\""
     }
 
     compileOptions {
@@ -106,6 +107,8 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
 
     implementation "com.jakewharton.timber:timber:$timberVersion"
+
+    implementation "com.tencent.bugly:crashreport:$buglyVersion"
 
     implementation project(':commonlibrary')
 
