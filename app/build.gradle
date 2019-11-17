@@ -47,6 +47,15 @@ android {
         includeAndroidResources = true
     }
 
+    signingConfigs {
+        release {
+            storeFile file('../koma_mj.jks')
+            storePassword project.hasProperty("STORE_PASSWORD") ? STORE_PASSWORD : System.getenv("STORE_PASSWORD")
+            keyAlias project.hasProperty("KEY_ALIAS") ? KEY_ALIAS : System.getenv("KEY_ALIAS")
+            keyPassword project.hasProperty("KEY_PASSWORD") ? KEY_PASSWORD : System.getenv("KEY_PASSWORD")
+        }
+    }
+
     buildTypes {
         debug {
             versionNameSuffix = '-debug'
@@ -60,6 +69,7 @@ android {
             minifyEnabled true
             zipAlignEnabled true
             shrinkResources true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
