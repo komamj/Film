@@ -10,6 +10,8 @@ ext {
     lifecycleVersion = '2.1.0'
     roomVersion = '2.2.1'
 
+    permissionVersion = '3.0.0'
+
     glideVersion = '4.10.0'
     retrofitVersion = '2.6.2'
     interceptorVersion = '4.2.0'
@@ -26,7 +28,7 @@ ext {
     junitVersion = '4.12'
     mockitoCoreVersion = '2.25.0'
     powermockVersion = '2.0.2'
-    robolectricVersion = '4.3-beta-1'
+    robolectricVersion = '4.3.1'
     archcoreTestingVersion = '2.0.0'
     //android test
     extJunitVersion = '1.1.1'

@@ -1,23 +1,20 @@
 package com.koma.film.tv
 
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.koma.film.data.source.FilmRepositoryImp
+import com.koma.film.base.BaseViewModelTest
+import com.koma.film.data.entities.TVShow
+import com.koma.film.util.LiveDataTestUtil
+import io.reactivex.Single
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
-import org.mockito.Mockito.mock
+import org.mockito.Mockito.`when`
+import org.mockito.Mockito.anyInt
 
 @RunWith(JUnit4::class)
-class TVShowViewModelTest {
-    @get:Rule
-    val instantTaskExecutorRule = InstantTaskExecutorRule()
-
-    private lateinit var viewModel: TVShowViewModel
-
-    private val repository = mock(FilmRepositoryImp::class.java)
-
+class TVShowViewModelTest : BaseViewModelTest<TVShowViewModel>() {
     @Before
     fun init() {
         viewModel = TVShowViewModel(repository)
@@ -25,6 +22,16 @@ class TVShowViewModelTest {
 
     @Test
     fun `should return true when loadTVShows is loading`() {
+        `when`(repository.getPopularTV(anyInt()))
+            .thenReturn(
+                Single.just(emptyList<TVShow>()).subscribeOn(testScheduler)
+            )
+
+        viewModel.loadTVShows(0)
+
+        assertTrue(LiveDataTestUtil.getValue(viewModel.isLoading))
+        testScheduler.triggerActions()
+        assertFalse(LiveDataTestUtil.getValue(viewModel.isLoading))
     }
 
     @Test
