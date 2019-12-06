@@ -16,7 +16,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.koma.film">
+    package="com.koma.mobile">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -29,7 +29,7 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
-        android:name=".FilmApp"
+        android:name="com.koma.mobile.FilmApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -41,7 +41,7 @@
         tools:targetApi="m">
 
         <activity
-            android:name=".splash.SplashActivity"
+            android:name="com.koma.mobile.splash.SplashActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,7 +51,7 @@
         </activity>
 
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.koma.mobile.main.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
 

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Film Module</string>
+
+    <string name="title">Film</string>
+
+    <string-array name="film_tab_title">
+        <item name="popular">流行</item>
+        <item name="top_rated">评分最高</item>
+        <item name="upcoming">即将上映</item>
+        <item name="now_playing">正在上映</item>
+    </string-array>
+</resources>

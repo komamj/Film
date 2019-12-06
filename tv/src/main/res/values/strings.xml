@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TV Module</string>
+
+    <string name="title">电视</string>
+
+    <string-array name="tab_title">
+        <item name="popular">流行</item>
+        <item name="top_rated">评分最高</item>
+        <item name="on tv">即将播出</item>
+        <item name="airing today">正在播出</item>
+    </string-array>
+</resources>

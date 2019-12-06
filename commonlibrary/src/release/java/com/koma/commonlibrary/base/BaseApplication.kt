@@ -1,9 +1,5 @@
 package com.koma.commonlibrary.base
 
-import android.app.Application
+import dagger.android.support.DaggerApplication
 
-open class BaseApplication : Application() {
-    override fun onCreate() {
-        super.onCreate()
-    }
-}
+abstract class BaseApplication : DaggerApplication()

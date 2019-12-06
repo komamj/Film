@@ -1,10 +1,10 @@
 package com.koma.commonlibrary.base
 
-import android.app.Application
 import android.os.StrictMode
+import dagger.android.support.DaggerApplication
 import leakcanary.AppWatcher
 
-open class BaseApplication : Application() {
+abstract class BaseApplication : DaggerApplication() {
     override fun onCreate() {
         super.onCreate()
 
